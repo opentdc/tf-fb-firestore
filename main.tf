@@ -58,7 +58,7 @@ resource "google_firebaserules_ruleset" "firestore" {
       name                          = "firestore.rules"
       # Write security rules in a local file named "firestore.rules".
       # Learn more: https://firebase.google.com/docs/firestore/security/get-started
-      content                       = file("./fb-firestore/firestore.rules")
+      content                       = file("${path.module}/firestore.rules")
     }
   }
 
