@@ -36,8 +36,6 @@ resource "google_firestore_database" "default" {
   provider                        = google-beta
   project                         = var.project_id
   name                            = "(default)"
-  # See available locations:
-  # https://firebase.google.com/docs/firestore/locations
   location_id                     = var.location
   # "FIRESTORE_NATIVE" is required to use Firestore with Firebase SDKs,
   # authentication, and Firebase Security Rules.
